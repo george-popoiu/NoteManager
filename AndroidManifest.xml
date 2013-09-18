@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.infoeducatie.android.notemanager"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application android:name=".NoteManagerApplication" android:icon="@drawable/icon" android:label="@string/app_name"
+    				android:theme="@style/Theme.NoteManager">
+        <activity android:name=".activities.NoteListActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <uses-library android:name="com.google.android.maps" />
+		<activity android:name=".activities.PreferencesActivity" android:label="Preferences" />        
+		<activity android:name=".activities.AddNoteActivity" android:label="Add Note" />
+		<activity android:name=".activities.AddLocationMapActivity" android:label="Add Location" />
+		<activity android:name=".activities.ViewNoteActivity" android:label="View Note" />
+		<activity android:name=".activities.SetPasswordActivity" android:label="Set Password" />
+		<activity android:name=".activities.AuthorizationActivity" android:label="Authorization" />
+		<activity android:name=".activities.WidgetConfigurationActivity" android:label="Note Manager Widget">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+			</intent-filter>
+		</activity>
+		
+		<receiver android:enabled="true" android:name=".receivers.AlarmReceiver" />
+		
+		<provider android:name=".providers.NotesProvider" 
+					android:authorities="com.infoeducatie.android.notemanager.providers.noteprovider" />
+		
+		<receiver android:name=".receivers.NoteWidget">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />				
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/note_widget_info" />
+		</receiver>
+		
+    </application>
+    
+</manifest>

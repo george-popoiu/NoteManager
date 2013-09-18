@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:layout_marginBottom="5dp">
+    <RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <TextView android:id="@+id/todo_note_title_text"
+    			android:text="Title"
+    			android:layout_height="wrap_content"
+    			android:layout_width="fill_parent"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="5dp" />
+    <EditText android:id="@+id/todo_note_title_edit" 
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:hint="The title of the note"
+    			android:layout_below="@id/todo_note_title_text"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="5dp" />
+    			
+    <TextView android:id="@+id/todo_note_content_text"
+    			android:text="Content"
+    			android:layout_height="wrap_content"
+    			android:layout_width="wrap_content"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="5dp"
+    			android:layout_below="@id/todo_note_title_edit" />
+    <EditText android:id="@+id/todo_note_content_edit" 
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:hint="The content of the note"
+    			android:lines="6"
+    			android:gravity="center_vertical"
+    			android:layout_below="@id/todo_note_content_text"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="5dp" />
+    <TextView android:id="@+id/todo_note_location_text"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="5dp"
+    			android:layout_below="@id/todo_note_content_edit"
+    			android:visibility="gone" />
+    
+    <!--  -->			
+    <CheckBox android:id="@+id/tweet_when_complete"
+    			android:text="Tweet when complete"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_below="@id/todo_note_location_text" 
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginBottom="5dp" />
+    
+     <TextView android:id="@+id/counter_text"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_alignParentRight="true"
+    			android:layout_marginRight="10dp"
+    			android:layout_alignBaseline="@id/tweet_when_complete"
+    			android:layout_below="@id/todo_note_content_edit" />
+    <EditText android:id="@+id/todo_note_tweet_content" 
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:hint="What to tweet(max 140 characters)"
+    			android:lines="4"
+    			android:gravity="center_vertical"
+    			android:layout_below="@id/tweet_when_complete"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="5dp"
+    			android:enabled="false" /> 
+    <!-- -->
+    
+    <Button android:id="@+id/todo_note_add_button"
+    		android:text="Add"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_below="@id/todo_note_tweet_content"
+    		android:layout_marginLeft="10dp"
+    		android:layout_marginRight="10dp"
+    		android:onClick="addButtonClicked" />
+    
+    </RelativeLayout>
+</ScrollView>    
+</RelativeLayout>    

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+   			android:layout_height="fill_parent" >
+
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:id="@+id/view_note_title"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_margin="10dp"
+    			android:textSize="25sp"
+    			android:textColor="@color/white" />
+    
+    <TextView android:id="@+id/view_note_content"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content" 
+    			android:layout_margin="10dp" 
+    			android:textSize="18sp"
+    			android:visibility="gone" />
+	
+	<TextView android:id="@+id/view_note_before_location"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="Address :"
+    			android:textSize="18sp"
+    			android:textColor="@color/white"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginTop="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="5dp"
+    			android:visibility="gone" />
+    <TextView android:id="@+id/view_note_location"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:textSize="18sp" 
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="10dp"
+    			android:visibility="gone" />
+    
+    <TextView android:id="@+id/view_note_before_tweet"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="Tweet :"
+    			android:textSize="18sp"
+    			android:textColor="@color/white"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginTop="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="5dp"
+    			android:visibility="gone" />
+    <TextView android:id="@+id/view_note_tweet"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:textSize="18sp"  
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="10dp"
+    			android:visibility="gone" />
+    
+</LinearLayout>
+
+</ScrollView>    

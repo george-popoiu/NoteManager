@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:id="@+id/add_note_menu_main_group">
+		<item android:title="Add location" android:id="@+id/add_note_menu_add_location" android:icon="@drawable/ic_menu_mylocation" />
+		<item android:title="Remove location" android:id="@+id/add_note_menu_remove_location" android:icon="@drawable/ic_menu_delete" />
+	</group>
+</menu>

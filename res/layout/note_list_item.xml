@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infoeducatie.android.notemanager.views.NoteListItem xmlns:android="http://schemas.android.com/apk/res/android"
+			 	android:layout_width="fill_parent" android:layout_height="fill_parent" 
+			 	android:background="@drawable/list_selector_background">
+			 	
+<ImageView android:id="@+id/note_item_password_icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_lock_lock"
+			android:layout_marginTop="6dp"
+			android:layout_marginLeft="5dp"
+			android:visibility="gone" />
+<CheckedTextView android:id="@android:id/text1"
+				 android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+				 android:layout_height="wrap_content"
+				 android:layout_width="fill_parent"
+				 android:layout_marginLeft="5dp"
+				 android:gravity="center_vertical"
+				 android:layout_alignParentRight="true"
+				 android:layout_toRightOf="@id/note_item_password_icon" />
+<TextView android:id="@+id/note_item_location_text" 
+		  android:layout_height="wrap_content"
+		  android:layout_width="fill_parent"
+		  android:layout_below="@android:id/text1"
+		  android:layout_marginLeft="10dp"
+		  android:visibility="gone" />				 						 
+			 	
+</com.infoeducatie.android.notemanager.views.NoteListItem>

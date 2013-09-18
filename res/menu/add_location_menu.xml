@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:id="@+id/add_location_menu_main_group">
+		<item android:title="Use My Location" android:id="@+id/add_location_menu_my_location"/>
+	</group>
+</menu>

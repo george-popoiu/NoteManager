@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+	<!-- <PreferenceCategory android:title="Twitter" >
+		<EditTextPreference android:key="twitter_username" android:title="Username" />
+		<EditTextPreference android:key="twitter_password" android:title="Password" android:password="true" />
+	</PreferenceCategory>  -->
+	
+	<PreferenceCategory android:title="Location">
+		<CheckBoxPreference android:title="Use Location" android:key="use_location"/>
+		<CheckBoxPreference android:title="Notify nearby notes" android:dependency="use_location" android:key="use_notification" />
+		<ListPreference android:dependency="use_notification" android:key="notification_distance" 
+						android:title="Notification distance (meters)"
+						android:entries="@array/location_distances" android:entryValues="@array/location_distances_values" 
+						android:defaultValue="200" />
+	</PreferenceCategory>
+	
+</PreferenceScreen>
